@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { PhotoService } from '../services/photo.service';
+import { Component} from '@angular/core';
 
 
 @Component({
@@ -7,11 +6,9 @@ import { PhotoService } from '../services/photo.service';
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-export class Tab1Page {
+export class Tab1Page{
 
-  constructor(public photoService: PhotoService) {}
+  constructor() {}
 
-  async ngOnInit() {
-    await this.photoService.loadSaved();
-  }
+
 }
